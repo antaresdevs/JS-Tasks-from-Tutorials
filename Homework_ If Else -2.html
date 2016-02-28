@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	<title> IF ELSE </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link type="text/css" rel="stylesheet" href="style4.css" />
+	</head>
+
+<body>
+<div>
+<script type="text/javascript">
+
+/*  УСЛОВНЫЕ ОПЕРАТОРЫ  IF */ 
+	var weather = "sunny";
+	if(weather == "sunny") {
+		document.write ("I am going to the beach! <br />"); //это код для TRUE 
+	}
+
+/* IF  ELSE */ 
+	var weather = "cloudy";
+	if(weather == "sunny") {
+		document.write ("I am going to the beach!"); //это код для TRUE 
+	}
+	else {
+	document.write ("I will go to museum <br />"); 
+	} //это код для FALSE 
+
+/*МЕНЬШЕ РАВНО ИЛИ БОЛЬШЕ РАВНО*/
+	var count = 60;
+	if (count <= 10) {
+	document.write ("Переменная count меньше или равна десяти <br />");
+	}
+	else {
+	document.write ("Переменная  count больше детсяти <br />");
+	}
+
+/*Множественные условия - несколько УСЛОВИЙ     "И" && */
+	var weatherToday = "nice";
+	var car = "No"; // в зависимости от условий, будет результат для if либо для else
+	if (weatherToday == "nice" && car == "yes") {
+	document.write ("So, I'm going to the beach by car!<br />");
+	}
+	else {
+	document.write ("Well.. I would rather stay at home <br />");
+	}
+	
+	
+/*Множественные условия - несколько УСЛОВИЙ  "ИЛИ" */
+	var myFriend = "Lesya";
+		
+	if (myFriend == "Lesya" || myFriend == "Anton" ) // достаточно выполнения хотя бы одного условия!
+	{
+	document.write ("I will go to the cinema with them <br />");
+	}
+	else {
+	document.write ("I even don't know those people!");
+	} 
+	
+	
+/*Несколько условий одновременно*/
+	var pineApple = "no", lemon = "no", grapes = "yes";
+	
+	if (pineApple == "yes") {
+	document.write ("Yes! We buy pineApple!<br />");
+	}
+	
+	else if (lemon == "yes") { //если pineApple нет, надо проверить, есть ли lemon
+	document.write ("We buy tasty lemon!<br />");
+	}
+	
+	else if (grapes == "yes"){
+	document.write ("We're most lucky today to buy grapes! Yahoo!<br />");
+	}	
+	
+	else {
+	document.write("We don't buy anything at all and leave the shop<br />");
+	}
+
+/*SPECIAL CASES */
+	
+	var numberOfStars = 20000000; // Если любое число, кроме нуля, покажет TRUE, включая -90. Если 0 - превратит ложь.  
+	if  (numberOfStars) {
+	document.write ("True<br />");
+	}	
+	
+	else {
+	document.write ("False");
+	}  
+	
+	var star = "sun"; // Если любое слово, покажет TRUE. Если пустая строка, где ничего нет " " - это будет FALSE.  
+	if  (numberOfStars) {
+	document.write ("True<br />");
+	}	
+	
+	else {
+	document.write ("False");
+	}  
+	
+/* BOOLEAN ТИП ДАННЫХ - true or false*/
+
+var number = true; // true and false всегда пишутся БЕЗ КАВЫЧЕК!!!
+if (number) {
+document.write ("It's indeed true");
+} 
+
+else {
+document.write ("No, it's false");
+}	
+
+
+	
+	
+</script>
+</div>
+</body>
+</html>
